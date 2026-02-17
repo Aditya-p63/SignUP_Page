@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation in java</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <header class="signup">
+          <h1>Signup</h1>
+        </header>
+        <main class="signupbody">
+          <form action="#">
+            <p>
+              <label for="name">Full Name</label>
+              <input type="text" placeholder="Enter your Name" id="name"   />
+                <i class="fa-solid"></i>
+                <span id="nameerror"></span>
+            </p>
+            <p>
+              <label for="email">Email</label>
+              <input type="email" placeholder="Enter your E-mail" id="email"/>
+              <i class="fa-solid"></i>
+                 <span id="emailerror"></span>
+            </p>
+            <p>
+              <label for="password">Password</label>
+              <input type="password" placeholder="At least 8 char " id="password"
+                required min="8" max="30"/>
+                <i class="fa-solid"></i>
+                 <span id="passerror"></span>
+            </p>
+            <p>
+              <input type="submit" value="create account" id="submitbutton" />
+            </p>
+          </form>
+        </main>
+        <footer class="foot">
+          <p>Already Have an Account? <a href="">Login</a></p>
+        </footer>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
